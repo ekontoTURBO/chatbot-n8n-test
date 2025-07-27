@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKC pomoc</title>
+    <link rel="icon" type="image/png" href="KKC logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <button id="open-chat-btn" class="open-chat-btn">Kliknij i daj sobie pomóc</button>
+        <div class="chat-container chat-hidden" id="chat-container">
+            <div class="chat-header">
+                <h2>Misjonarz KKC</h2>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <div class="message bot-message">Witaj! W czym mogę dzisiaj pomóc i jak masz na imię?</div>
+            </div>
+            <form class="chat-input" id="chat-form">
+                <input type="text" id="user-input" placeholder="Napisz wiadomość..." autocomplete="off">
+                <button id="send-btn">Wyślij</button>
+            </form>
+
+            <div id="email-modal" class="email-modal hidden">
+                <div class="email-modal-content">
+                    <h3>Pozwól nam pomóc.</h3>
+                    <p>Wprowadź swój adres e-mail poniżej, aby rozpocząć czat.</p>
+                    <form id="email-form">
+                        <input type="email" id="email-input" placeholder="your.email@example.com" required>
+                        <button type="submit">Rozpocznij Czat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="KKC logo.png" alt="KKC Logo" class="logo">
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
